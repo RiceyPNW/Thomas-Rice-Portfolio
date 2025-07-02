@@ -1,0 +1,135 @@
+/* === Reset and Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* === Navigation Bar === */
+nav {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0066cc;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+/* === Page Title === */
+h1 {
+  color: #004080;
+  font-size: 2.2rem;
+  margin: 3rem 0 2rem;
+  text-align: center;
+}
+
+/* === Certifications Section === */
+#certificationsSection {
+  flex: 1 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-left: 6px solid #0066cc;
+  border-radius: 8px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 50, 0.1);
+}
+
+/* Each certification card */
+.cert-entry {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.cert-entry img {
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid #0066cc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cert-entry h3 {
+  font-size: 1.5rem;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.cert-entry p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: left;
+}
+
+/* === Footer === */
+footer {
+  width: 100vw;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: auto;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #mainContent, #additionalContent {
+    padding: 1rem;
+  }
+
+  #mainHeader h1 {
+    font-size: 1.8rem;
+  }
+
+  #mainContent p, #additionalContent p, #additionalContent li {
+    font-size: 1rem;
+  }
+}
