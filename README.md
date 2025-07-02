@@ -1,7 +1,6 @@
 # Personal Portfolio Website
 
 This is my personal portfolio website built to showcase my professional experience, data & business intelligence projects, technical skills, and certifications.  
-It's designed as a clean, responsive site with a focus on readability and blue-accent styling appropriate for BI / data roles.
 
 ---
 
